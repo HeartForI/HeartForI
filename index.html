@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Particles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="hint"></div>
+
+  <!-- Музыка: файл music.mp3 должен лежать рядом с index.html -->
+  <audio id="music" src="music.mp3" loop preload="auto"></audio>
+
+  <!-- Браузеры не включают звук сами, поэтому нужен первый тап -->
+  <div id="start">
+    <div class="start-box">
+      <div class="start-heart">❤</div>
+      <p>Нажми, чтобы начать</p>
+    </div>
+  </div>
+
+  <button id="mute" aria-label="Звук">🔊</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
